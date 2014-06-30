@@ -6,7 +6,7 @@ comments: true
 categories:
 ---
 
-Last year, I read a great book on Programming and development (The Prgramatic Programmer).
+Last year, I read a great book on Programming and development (The Pragmatic Programmer).
 Here is a gist of checklist you must do in case you are developer. These are very good
 and for sure will help you evolve as a better developer.
 
