@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Some Intresting Shell Scripts"
+date: 2012-03-16
+comments: false
+categories:
+ - latest
+---
+
+<div class='post'>
+<div dir="ltr" style="text-align: left;" trbidi="on">Here are some shell scripts you will love to try and learn from.<br /><br />To find all the IP address in /etc directory<br /><br /><pre>find /etc -exec grep '[0-9][0-9]*[.][0-9][0-9]*[.][0-9][0-9]*[.][0-9][0-9]*' {} \;<br /><br />Another Script</pre><pre>==============</pre><pre><br />#!/bin/bash<br /># idelete.sh: Deleting a file by its inode number.<br /><br />#  This is useful when a filename starts with an illegal character,<br />#+ such as ? or -.<br /><br />ARGCOUNT=1                      # Filename arg must be passed to script.<br />E_WRONGARGS=70<br />E_FILE_NOT_EXIST=71<br />E_CHANGED_MIND=72<br /><br />if [ $# -ne "$ARGCOUNT" ]<br />then<br />  echo "Usage: `basename $0` filename"<br />  exit $E_WRONGARGS<br />fi  <br /><br />if [ ! -e "$1" ]<br />then<br />  echo "File \""$1"\" does not exist."<br />  exit $E_FILE_NOT_EXIST<br />fi  <br /><br />inum=`ls -i | grep "$1" | awk '{print $1}'`<br /># inum = inode (index node) number of file<br /># -----------------------------------------------------------------------<br /># Every file has an inode, a record that holds its physical address info.<br /># -----------------------------------------------------------------------<br /><br />echo; echo -n "Are you absolutely sure you want to delete \"$1\" (y/n)? "<br /># The '-v' option to 'rm' also asks this.<br />read answer<br />case "$answer" in<br />[nN]) echo "Changed your mind, huh?"<br />      exit $E_CHANGED_MIND<br />      ;;<br />*)    echo "Deleting file \"$1\".";;<br />esac<br /><br />find . -inum $inum -exec rm {} \;<br />#                           ^^<br />#        Curly brackets are placeholder<br />#+       for text output by "find."<br />echo "File "\"$1"\" deleted!"<br /><br />exit 0<br /><br /></pre></div></div>

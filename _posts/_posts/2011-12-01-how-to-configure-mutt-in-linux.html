@@ -1,0 +1,11 @@
+---
+layout: post
+title: "How To Configure Mutt in Linux"
+date: 2011-12-01
+comments: false
+categories:
+ - latest
+---
+
+<div class='post'>
+Mutt is a very powerful and fast email client (text based )in linux.<br/><br/>here is a small tutorial how to use mutt as a email client on Linux.<br/><br/>First you need to install mutt :<br/><br/>for this in Ubuntu open ur console and type in : sudo apt-get install mutt<br/><br/>in fedora : yum install mutt<br/><br/>once it is installed you need to create a couple of directories in your home folder:<br/><br/>$mkdir -p ~/.mutt/cache/headers<br/><br/>$mkdir ~/.mutt/cache/bodies<br/><br/>$touch ~/.mutt/certificates<br/><br/>Now type in nano /home/username/.muttrc and fill in the according to the sample muttrc file below:<br/><br/><a href="http://cache.gawker.com/assets/images/lifehacker/2010/06/muttrc-gmail.txt">http://cache.gawker.com/assets/images/lifehacker/2010/06/muttrc-gmail.txt</a><br/><br/>Edit the .muttrc file and fill in ur username and password in appropriate place and then save it.<br/><br/>Now go back to ur terminal and type mutt.It will prompt u to save certificates from google.Type a(always save) and Bingo !<br/><br/>You have ur working email client at ur disposal.</div>

@@ -1,0 +1,20 @@
+---
+layout: post
+title: "How To Get WiFi working in Fedora/Ubuntu"
+date: 2011-12-01
+comments: false
+categories:
+ - operating systems
+ - latest
+---
+
+<div class='post'>
+Hello everyone! Most of you must have faced some problems regarding your wireless drivers and it might not be working properly or working at all. Here is a quick guide how you can sort out this problem. The error must have been device not ready-firmware missing.<br/><br/>The guide is as follows: Download the drivers from this link <strong>http://downloads.openwrt.org/sources/broadcom-wl-4.150.10.5.tar.bz2.</strong><br/><br/>Now to need to extract the file.For that you need to go to directory where the file is downloaded. Open your terminal and type <strong>cd /home/username/Downloads</strong> and then type <strong>tar -xjf broadcom-wl-4.150.10.5.tar.bz2</strong>.When you type this command what it does is that all the content of the tarball gets extracted in the same directory the tarball is. Now get into Superuser shell because you will be needing full rights.For this you can type su -- and followed by root passwd if you are using fedora and alikes. If using Ubuntu/mint/ type <strong>sudo -s</strong> and then followed by passwd. You will get into root shell and will get # instead of $. Now you need to change the directory to the extracted drivers. For this type <strong>cd /home/username/Downloads/broadcom-wl-4.150.10.5/driver/</strong> Finally you need to extract all the drivers to the relevant directory.For this type :<strong> #b43-fwcutter -w /lib/firmware wl_apsta_mimo.o</strong> Now restart your system and guess what you can use your wifi without any hitch.</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>How To Get WiFi working in Fedora/Ubuntu « A guide to your digital … | Pici&#39;s Ubuntu Blog</div>
+<div class='content'>
+[...] the original post: How To Get WiFi working in Fedora/Ubuntu « A guide to your digital …   This entry was posted in all, and, DE, Drive, drivers, ever, GUI, guide, here, how, in, is, it, [...]</div>
+</div>
+</div>

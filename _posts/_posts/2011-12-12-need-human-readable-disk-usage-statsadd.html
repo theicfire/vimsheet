@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Need Human Readable Disk Usage Stats,Add This Script"
+date: 2011-12-12
+comments: false
+categories:
+ - latest
+---
+
+<div class='post'>
+If you want a more human readable Disk Usage stats while using linux, add the following script to your .bashrc<br/><pre>alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s&lt;1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'</pre><br/>You should add it under User specified Functions and aliases. When you are done with it this is what you will see when you type duf in your terminal.<br/><br/><a href="http://gotchacode.files.wordpress.com/2011/12/pic4.png"><img class="alignleft size-full wp-image-579" title="pic4" src="http://gotchacode.files.wordpress.com/2011/12/pic4.png" alt="" width="580" height="326" /></a></div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>ddouthitt</div>
+<div class='content'>
+Could you remove the line in my message labelled &quot;mapping&quot; (thanks!).</div>
+</div>
+<div class='comment'>
+<div class='author'>ddouthitt</div>
+<div class='content'>
+This is nice, but how about using the -h option to du?<br><br>$ du -sh *<br>17M     bugzilla-3.4.6<br>36K     hsperfdata_root<br>52M     new<br>42M     old<br>0       sfcbLocalSocket<br>4.0K    ssh-ffOOT30605<br></div>
+</div>
+</div>
