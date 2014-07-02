@@ -1,10 +1,10 @@
-gcode
-=====
+White Papper
+============
 
-gCode is a jekyll theme for tech blogs. It is clean and simple with good semantic
+White Paper is a jekyll theme for tech blogs. It is clean and simple with good semantic
 structure.
 
-![gcode image](https://i.cloudup.com/haO7k4fzYk.gif)
+![white-paper image](https://i.cloudup.com/haO7k4fzYk.gif)
 
 ## Usage:
 
@@ -21,4 +21,4 @@ jekyll server --watch
 
 ## Issues:
 
-Report issues or feature request [here](https://github.com/vinitkumar/gcode/issues).
+Report issues or feature request [here](https://github.com/vinitkumar/white-paper/issues).
