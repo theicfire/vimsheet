@@ -1,7 +1,7 @@
 name: White Paper
 markdown: redcarpet
 pygments: true
-url: http://vinitkumar.me/gcode
+url: http://vinitkumar.me/white-paper
 paginate: 8
 description:     Jekyll theme for Programmers
 intro: gCode is a Jekyll theme most suited to be used on tech blogs that like their content to shine.
