@@ -4,7 +4,7 @@ White Paper
 White Paper is a jekyll theme for tech blogs. It is clean and simple with good semantic
 structure.
 
-![white-paper image](https://i.cloudup.com/haO7k4fzYk.gif)
+![white-paper image](https://i.cloudup.com/rmZjQ83vRh-2000x2000.png)
 
 ## Usage:
 
