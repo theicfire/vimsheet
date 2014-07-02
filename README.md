@@ -1,4 +1,4 @@
-White Papper
+White Paper
 ============
 
 White Paper is a jekyll theme for tech blogs. It is clean and simple with good semantic
