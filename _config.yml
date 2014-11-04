@@ -1,6 +1,5 @@
 name: White Paper
 markdown: redcarpet
-highlighter: true
 url: http://vimsheet.com
 description: A Better Vim Cheat Sheet
 

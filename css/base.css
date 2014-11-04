@@ -6,7 +6,7 @@
   padding:0;
   margin:0;
 }
-h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, fieldset, address { margin:1em 0; }
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ol, dl, fieldset, address { margin:1em 0; }
 li, dd { margin-left:5%; }
 fieldset { padding: .5em; }
 select option{ padding:0 5px; }
@@ -33,8 +33,8 @@ a img{ border:none; }
 
 body {
   font-family: "Lato", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.3;
   color: #333;
   text-shadow: 0 1px 0 rgba(255,255,255,1.0);
   border-top: 4px solid #556270;
@@ -262,13 +262,13 @@ h1.link .desc {
 }
 
 h2 {
-  margin: 2.0em 0 -0.5em 0;
+  margin: 1.0em 0 0 0;
   font-size: 20px;
   color: #000;
 }
 
 h3 {
-  margin: 2.0em 0 -0.75em 0;
+  margin: 2.0em 0 0 0;
   font-size: 17px;
   color: #333;
 }
