@@ -7,7 +7,7 @@ title: A guide to your digital life
 #A Better Vim Cheat Sheet
 
 
-Note: If you’re decent at vim and want your mind blown, check out [Advanced Vim](/advanced.html).
+Note: If you’re decent at vim and want your mind blown, check out [Advanced Vim](advanced.html).
 
 My introduction to vim was harsh. I kept finding it both overwhelming and not useful. So I’ve compiled a list of *essential* commands that you will use every day using vim. I then give a few instructions to making vim as great as it should be, because it’s pretty terrible without configuration.
 
@@ -216,4 +216,3 @@ I don’t personally use these yet, but I’ve heard other people do!
 
 * `:wqa` - Write and quit all open tabs (thanks Brian Zick)
 
-If you’ve got this under your belt, you should check out Advanced Vim!
