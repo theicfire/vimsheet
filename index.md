@@ -11,9 +11,10 @@ Note: If you’re decent at vim and want your mind blown, check out [Advanced Vi
 
 My introduction to vim was harsh. I kept finding it both overwhelming and not useful. So I’ve compiled a list of *essential* commands that you will use every day using vim. I then give a few instructions to making vim as great as it should be, because it’s pretty terrible without configuration.
 
-##Cursor movement (Inside command mode)
+##Cursor movement (Inside command/normal mode)
 
-* todo image
+<img src="images/hjkl.png" alt="The four directions in VIM - hjkl"/>
+
 * `w` - jump by start of words (punctuation considered words)
 * `W` - jump by words (spaces separate words)
 * `e` - jump to end of words (punctuation considered words)
