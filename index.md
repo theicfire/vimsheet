@@ -4,12 +4,12 @@ title: A guide to your digital life
 ---
 
 
-#A Great Vim Cheat Sheet
+#A Better Vim Cheat Sheet
 
 
 Note: If you’re decent at vim and want your mind blown, check out [Advanced Vim](advanced.html).
 
-My introduction to vim was harsh. I kept finding it both overwhelming and not useful. So I’ve compiled a list of *essential* commands that you will use every day using vim. I then give a few instructions to making vim as great as it should be, because it’s pretty terrible without configuration.
+I’ve compiled a list of *essential* vim commands that I use every day. I then give a few instructions on how to making vim as great as it should be, because it’s painful without configuration.
 
 ##Cursor movement (Inside command/normal mode)
 
@@ -58,20 +58,20 @@ My introduction to vim was harsh. I kept finding it both overwhelming and not us
 * `dd` - delete the current line
 * Advanced
     * `J` - join line below to the current one
-    * `s` - delete character at cursor and substitute text
-    * `S` - delete line at cursor and substitute text (same as cc)
 
 ##Marking text (visual mode)
-* `v` - start visual mode, mark lines, then do command (such as y-yank)
-* `V` - start Linewise visual mode
+* `v` - starts visual mode
+    * From here you can move around as in normal mode (hjkl etc.) and can then do a command (such as `y`, `d`, or `c`)
+* `V` - starts linewise visual mode
 * `Ctrl+v` - start visual block mode
-* Navigation is just like in normal mode
 * `Esc` - exit visual mode
 * Advanced
     * `O` - move to Other corner of block
     * `o` - move to other end of marked area
 
 ##Visual commands
+Type any of these while some text is selected to apply the action
+
 * `y` - yank (copy) marked text
 * `d` - delete marked text
 * `c` - delete the marked text and go into insert mode (like c does above)
@@ -95,11 +95,11 @@ My introduction to vim was harsh. I kept finding it both overwhelming and not us
 * `?pattern` - search backward for pattern
 * `n` - repeat search in same direction
 * `N` - repeat search in opposite direction
-* `:%s/old/new/g` - replace all old with new throughout file
+* `:%s/old/new/g` - replace all old with new throughout file ([gn](https://github.com/vinitkumar/white-paper) is better though)
 * `:%s/old/new/gc` - replace all old with new throughout file with confirmations
 
 ##Working with multiple files
-* `:e filename` - Edit a file in a new buffer
+* `:e filename` - Edit a file
 * `:tabe` - make a new tab
 * `gt` - go to the next tab
 * `gT` - go to the previous tab
@@ -111,6 +111,8 @@ My introduction to vim was harsh. I kept finding it both overwhelming and not us
     * `ctrl+wq` - Quit a window
 
 ##Marks
+Marks allow you to jump to designated points in your code.
+
 * `m{a-z}` - Set mark {a-z} at cursor position 
 * A capital mark {A-Z} sets a global mark and will work between files
 * `‘{a-z}` - move the cursor to the start of the line where the mark was set
@@ -122,7 +124,7 @@ My introduction to vim was harsh. I kept finding it both overwhelming and not us
 * `.` - repeat last command
 
 #Making Vim actually useful
-Vim is pretty painful out of the box. Global search is terrible, typeing `:w` for every file save is awkward, indenting code, etc is all worse than normal text editors. But a few changes and you’ll be much closer to the editor of your dreams.
+Vim is quite unpleasant out of the box. For example, typeing `:w` for every file save is awkward and copying and pasting to the system clipboard does not work. But a few changes will get you much closer to the editor of your dreams.
 
 ##.vimrc
 * [https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc](https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc)
@@ -143,7 +145,7 @@ Vim is pretty painful out of the box. Global search is terrible, typeing `:w` fo
             * restart your terminal and you should see `vim --version` now with `+clipboard`
 
 ##Plugins
-* The easiest way to make vim more powerful is to use Vintageous in sublime (version 3). This gives you Vim mode inside sublime, giving you the best of both world.
+* The easiest way to make vim more powerful is to use Vintageous in sublime (version 3). This gives you Vim mode inside sublime. I suggest this (or a similar setup with the Atom editor) if you aren't a vim master.
 * Vintageous is great, but there’s a few things you have to do to tame it.
     * Get the [current version](https://github.com/guillermooo/Vintageous) of Vintageous (I last used 3.5.1), and extract it to `~/.config/sublime-text-3/Packages/Vintageous` (or wherever the Packages directory is) (Do not use the package manager; we don’t want compiled python. We want to edit the python)
     * edit `Vintageous/Default.sublime-keymap`, and comment out (put `//` in front of lines) the references to certain useful shortcuts that you don’t want Vintageous to overwrite (first check each to see if it’s overwritten)
