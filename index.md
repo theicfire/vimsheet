@@ -144,7 +144,7 @@ Vim is pretty painful out of the box. Global search is terrible, typeing `:w` fo
 ##Plugins
 * The easiest way to make vim more powerful is to use Vintageous in sublime (version 3). This gives you Vim mode inside sublime, giving you the best of both world.
 * Vintageous is great, but there’s a few things you have to do to tame it.
-    * Get the [current version](https://bitbucket.org/guillermooo/vintageous/downloads/Vintageous.sublime-package) of Vintageous (I last used 3.5.1), and extract it to `~/.config/sublime-text-3/Packages/Vintageous` (or wherever the Packages directory is) (Do not use the package manager; we don’t want compiled python. We want to edit the python)
+    * Get the [current version](https://github.com/guillermooo/Vintageous) of Vintageous (I last used 3.5.1), and extract it to `~/.config/sublime-text-3/Packages/Vintageous` (or wherever the Packages directory is) (Do not use the package manager; we don’t want compiled python. We want to edit the python)
     * edit `Vintageous/Default.sublime-keymap`, and comment out (put `//` in front of lines) the references to certain useful shortcuts that you don’t want Vintageous to overwrite (first check each to see if it’s overwritten)
         * `ctrl+w` - close
         * `ctrl+s` - save
