@@ -124,7 +124,7 @@ My introduction to vim was harsh. I kept finding it both overwhelming and not us
 Vim is pretty painful out of the box. Global search is terrible, typeing `:w` for every file save is awkward, indenting code, etc is all worse than normal text editors. But a few changes and you’ll be much closer to the editor of your dreams.
 
 ##.vimrc
-* [https://github.com/theicfire/my-vim/blob/master/.vimrc](https://github.com/theicfire/my-vim/blob/master/.vimrc)
+* [https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc](https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc)
     * Copy this to your home directory and restart vim. Read through it to see what you can now do (like  `[space]w` to save a file)
         * mac users - making a hidden normal file is suprisingly tricky. Here’s one way:
             * in the command line, go to the home directory
