@@ -4,7 +4,7 @@
 <meta name="keywords" content="TODO">
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% endif %}{{ site.title }}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
