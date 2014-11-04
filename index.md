@@ -1,10 +1,10 @@
 ---
 layout: default
-title: A guide to your digital life
+title: A Great Vim Cheat Sheet
 ---
 
 
-#A Better Vim Cheat Sheet
+#A Great Vim Cheat Sheet
 
 
 Note: If you’re decent at vim and want your mind blown, check out [Advanced Vim](advanced.html).
