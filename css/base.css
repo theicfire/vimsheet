@@ -548,3 +548,25 @@ code.html span.doctype {
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 /* @end */
+
+/* Chase */
+h1 {
+    margin-left: 0px;
+}
+h2 {
+    font-size: 30px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+pre {
+    margin: 0 20px;
+    padding: 0px;
+    border-bottom: 0px;
+    background-color: #f9f9f9;
+}
+
+body {
+    padding-bottom: 30px;
+    border: 0px;
+}
