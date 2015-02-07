@@ -11,7 +11,7 @@ The best possible resource on vim is the book [Practical Vim](http://www.amazon.
 * Text Objects
 	* Say you have `def (arg1, arg2, arg3)`, where your cursor is somewhere in the middle of the parenthesis.
     * `di(` deletes everything between the parenthesis. That says "change everything inside the nearest parenthesis". Without text objects, you would need to do `T(dt)`.
-	* Learn more [here]((http://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/)
+	* Learn more [here](http://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/)
 * automatic marks
     * [http://vim.wikia.com/wiki/Using\_marks](http://vim.wikia.com/wiki/Using_marks) under "special marks"
 * `%` - jumps between matching `()` or `{}`
