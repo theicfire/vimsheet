@@ -558,6 +558,9 @@ h2 {
     border-bottom: 1px solid #eee;
     margin-bottom: 5px;
 }
+h3 {
+    margin: 5px 0 0 0;
+}
 
 pre {
     margin: 0 20px;

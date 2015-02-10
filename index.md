@@ -127,87 +127,39 @@ Marks allow you to jump to designated points in your code.
 Vim is quite unpleasant out of the box. For example, typeing `:w` for every file save is awkward and copying and pasting to the system clipboard does not work. But a few changes will get you much closer to the editor of your dreams.
 
 ##.vimrc
-* [https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc](https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc)
-    * Copy this to your home directory and restart vim. Read through it to see what you can now do (like  `[space]w` to save a file)
-        * mac users - making a hidden normal file is suprisingly tricky. Here’s one way:
-            * in the command line, go to the home directory
-            * type `nano .vimrc`
-            * paste in the contents of the .vimrc file
-            * `ctrl+x`, `y`, `[enter]` to save
-    * This is a minimal vimrc that focuses on three priorities:
-        * adding options that are strictly better (like more information showing in autocomplete)
-        * more convenient keystrokes (like  `[space]w` for write, instead of `:w [enter]`)
-        * a similar workflow to normal text editors (like enabling the mouse)
-    * You should now be able to press  `[space]w` in normal mode to save a file. And  `[space]p` to paste from outside of vim.
-        * If you can’t paste, it’s probably because vim was not built with the system clipboard option. To check, run `vim --version` and see if `+clipboard` exists. If it says `-clipboard`, you will not be able to copy from outside of vim.
-        * For mac users, homebrew does this right. Install homebrew and then run `brew install vim`.
-            * then move the old vim binary: `$ mv /usr/bin/vim /usr/bin/vimold`
-            * restart your terminal and you should see `vim --version` now with `+clipboard`
+* [My .vimrc file](https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc) has some pretty great ideas I haven't seen elsewhere.
+* This is a minimal vimrc that focuses on three priorities:
+    * adding options that are strictly better (like more information showing in autocomplete)
+    * more convenient keystrokes (like  `[space]w` for write, instead of `:w [enter]`)
+    * a similar workflow to normal text editors (like enabling the mouse)
+
+### Installation
+* Copy this to your home directory and restart vim. Read through it to see what you can now do (like  `[space]w` to save a file)
+    * mac users - making a hidden normal file is suprisingly tricky. Here’s one way:
+        * in the command line, go to the home directory
+        * type `nano .vimrc`
+        * paste in the contents of the .vimrc file
+        * `ctrl+x`, `y`, `[enter]` to save
+* You should now be able to press  `[space]w` in normal mode to save a file.
+* `[space]p` should paste from the system clipboard (outside of vim).
+    * If you can’t paste, it’s probably because vim was not built with the system clipboard option. To check, run `vim --version` and see if `+clipboard` exists. If it says `-clipboard`, you will not be able to copy from outside of vim.
+    * For mac users, homebrew install vim with the clipboard option. Install homebrew and then run `brew install vim`.
+        * then move the old vim binary: `$ mv /usr/bin/vim /usr/bin/vimold`
+        * restart your terminal and you should see `vim --version` now with `+clipboard`
 
 ##Plugins
-* The easiest way to make vim more powerful is to use Vintageous in sublime (version 3). This gives you Vim mode inside sublime. I suggest this (or a similar setup with the Atom editor) if you aren't a vim master.
-* Vintageous is great, but there’s a few things you have to do to tame it.
-    * Get the [current version](https://github.com/guillermooo/Vintageous) of Vintageous (I last used 3.5.1), and extract it to `~/.config/sublime-text-3/Packages/Vintageous` (or wherever the Packages directory is) (Do not use the package manager; we don’t want compiled python. We want to edit the python)
-    * edit `Vintageous/Default.sublime-keymap`, and comment out (put `//` in front of lines) the references to certain useful shortcuts that you don’t want Vintageous to overwrite (first check each to see if it’s overwritten)
-        * `ctrl+w` - close
-        * `ctrl+s` - save
-        * `tab` - indent
-        * `ctrl+n` - new file
-        * `ctrl+a` - select all
-        * `ctrl+f` - find
-            * `/` from vim also works, but it’s not as useful sometimes
+* The easiest way to make vim more powerful is to use Vintageous in sublime (version 3). This gives you Vim mode inside sublime. I suggest this (or a similar setup with the Atom editor) if you aren't a vim master. Check out [Advanced Vim](advanced.html) if you are.
+* Vintageous is great, but I suggest you change a few settings to make it better.
+    * Clone [this repository](https://github.com/theicfire/Vintageous) to `~/.config/sublime-text-3/Packages/Vintageous`, or similar. Then check out the "custom" branch.
+        * Alternatively, you can get a more updated Vintageous version by cloning [the official](https://github.com/guillermooo/Vintageous) repo and then copying over [this patch](https://github.com/theicfire/Vintageous/commit/19ff6311b01e3ae259b7eb8e3944687b42ba06ff).
     * Change the user settings (`User/Preferences.sublime-settings`) to include:
         * `"caret_style": "solid"`
         * This will make the cursor not blink, like in vim.
         * sublime might freeze when you do this. It’s a bug; just restart sublime after changing the file.
-    * Change `Vintageous/Preferences.sublime-settings`, and change the following fields:
-        * `"vintageous_use_ctrl_keys": true,`
-        * `"vintageous_use_sys_clipboard": true,`
-        * `"vintageous_reset_mode_when_switching_tabs": false,`
-            * [https://github.com/guillermooo/Vintageous/pull/562/files](https://github.com/guillermooo/Vintageous/pull/562/files) will open new files in command mode, as expected
     * `ctrl+r` in vim means "redo". But there is a handy ctrl+r shortcut in sublime that gives an "outline" of a file. I remapped it to alt+r by putting this in the User keymap
         * `{ "keys": ["alt+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },`
     * [Add the ability to toggle vintageous on and off](https://github.com/guillermooo/Vintageous/wiki/Toggling-Vintageous)
     * Mac users: you will not have the ability to hold down a navigation key (like holding j to go down). To fix this, run the commands specified here: [https://gist.github.com/kconragan/2510186](https://gist.github.com/kconragan/2510186)
-    * Get sublime to not copy when highlighting and pasting (pressing p) by doing the following:
-        * go into `sublime-text-3/Packages/Vintageos/actions.py` and comment out the line (and wrapping if statement) that says `state.registers['"'] = prev_text`. I bet there’s a better way to do this, but this seems to work.
-* recent work on Vintageous moved the file to xactions.py. It will probably change soon in the future. Here’s the diff of what I removed, so hopefully you can find the same diff in the future:
-
-~~~~~~~
-        --- a/xactions.py
-        +++ b/xactions.py
-        @@ -1542,9 +1542,9 @@ class _vi_big_p(ViTextCommandBase):
-                     fragments = state.registers['"']
-         
-        -        if state.mode == modes.VISUAL:
-        +        #if state.mode == modes.VISUAL:
-                     # Populate registers with the text we're about to paste.
-        -            state.registers['"'] = prev_text
-        +            # state.registers['"'] = prev_text
-         
-                 sels = list(self.view.sel())
-                 if len(sels) == len(fragments):
-        @@ -1640,14 +1640,14 @@ class _vi_p(ViTextCommandBase):
-                     print("Vintageous: Nothing in register \".")
-                     return
-         
-        -        if state.mode == modes.VISUAL:
-        -            # force register population. We have to do it here
-        -            # vi_cmd_data = {
-        -            #     "synthetize_new_line_at_eof": True,
-        -            #     "yanks_linewise": False,
-        -            # }
-        -            prev_text = state.registers.get_selected_text(self)
-        -            state.registers['"'] = prev_text
-        +      #  if state.mode == modes.VISUAL:
-        +      #      # force register population. We have to do it here
-        +      #      # vi_cmd_data = {
-        +      #      #     "synthetize_new_line_at_eof": True,
-        +      #      #     "yanks_linewise": False,
-        +      #      # }
-        +      #      prev_text = state.registers.get_selected_text(self)
-        +      #      state.registers['"'] = prev_text
-~~~~~~~
  
 * Now you should be able to restart sublime and have a great vim environment! Sweet Dude.
 
