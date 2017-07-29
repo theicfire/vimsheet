@@ -163,7 +163,7 @@ Vim is quite unpleasant out of the box. For example, typeing `:w` for every file
  
 * Now you should be able to restart sublime and have a great vim environment! Sweet Dude.
 
-##Switch Caps Lock and Escape
+## Switch Caps Lock and Escape
 * I highly recommend you switch the mapping of your caps lock and escape keys. You'll love it, promise! Switching the two keys is platform dependent; google should get you the answer
 
 ## Other
