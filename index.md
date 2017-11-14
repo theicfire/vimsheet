@@ -50,7 +50,7 @@ I’ve compiled a list of *essential* vim commands that I use every day. I then 
     * `cc` - change (replace) an entire line
     * `c  [movement command]` - change (replace) from the cursor to the move-to point.
     * ex. `ce` changes from the cursor to the end of the cursor word
-* Esc - exit insert mode
+* `Esc` or `Ctrl+[` - exit insert mode
 * `r  [char]` - replace a single character with the specified char (does not use insert mode)
 * `d` - delete
     * `d` - [movement command] deletes from the cursor to the move-to point.
@@ -64,7 +64,7 @@ I’ve compiled a list of *essential* vim commands that I use every day. I then 
     * From here you can move around as in normal mode (hjkl etc.) and can then do a command (such as `y`, `d`, or `c`)
 * `V` - starts linewise visual mode
 * `Ctrl+v` - start visual block mode
-* `Esc` - exit visual mode
+* `Esc` or `Ctrl+[` - exit visual mode
 * Advanced
     * `O` - move to Other corner of block
     * `o` - move to other end of marked area
