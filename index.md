@@ -98,7 +98,7 @@ Type any of these while some text is selected to apply the action
 * `:%s/old/new/g` - replace all old with new throughout file ([gn](https://github.com/vinitkumar/white-paper) is better though)
 * `:%s/old/new/gc` - replace all old with new throughout file with confirmations
 
-##Working with multiple files
+##Working with multiple files - Tabs
 * `:e filename` - Edit a file
 * `:tabe` - Make a new tab
 * `gt` - Go to the next tab
@@ -109,6 +109,18 @@ Type any of these while some text is selected to apply the action
     * `ctrl+wv` - Split windows vertically
     * `ctrl+ww` - switch between windows
     * `ctrl+wq` - Quit a window
+
+##Working with multiple files - Buffers
+* `:enew` - edit a new, unnamed buffer
+* `:ls` - list all open buffers
+* `:bn` - go to the next buffer
+* `:bp` - go to the previous buffer
+* `:b[N]` - goto buffer numbered N
+    * ex. `:b2` will bring buffer numbered 2 to your tab
+* `:b filename-prefix` - goto buffer with the corresponding filename-prefix
+* `Ctrl+^` - Toggle between current and last buffer
+* `Ctrl+o` - Go to the previous buffer you were in
+* `Ctrl+i` - Reverse the effect of `Ctrl+o`
 
 ##Marks
 Marks allow you to jump to designated points in your code.
