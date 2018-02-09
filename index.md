@@ -39,6 +39,12 @@ I’ve compiled a list of *essential* Vim commands that I use every day. I then 
         * `T [char]` - Move to before the next char on the current line before the cursor
         * All these commands can be followed by `;` (semicolon) to go to the next searched item, and `,` (comma) to go the the previous searched item
 
+##Scrolling
+* `Ctrl-E` - scroll downwards line by line 
+* `Ctrl-D` - scroll downwards a window
+* `Ctrl-Y` - scroll upwards line by line
+* `Ctrl-U` - scroll upwards a window
+
 ##Insert/Appending/Editing Text
 * Results in insert mode
     * `i` - start insert mode at cursor
