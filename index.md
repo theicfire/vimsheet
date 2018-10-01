@@ -4,14 +4,14 @@ title: A Great Vim Cheat Sheet
 ---
 
 
-#A Great Vim Cheat Sheet
+# A Great Vim Cheat Sheet
 
 
 Note: If you’re decent at Vim and want your mind blown, check out [Advanced Vim](advanced.html).
 
 I’ve compiled a list of *essential* Vim commands that I use every day. I then give a few instructions on how to making Vim as great as it should be, because it’s painful without configuration.
 
-##Cursor movement (Inside command/normal mode)
+## Cursor movement (Inside command/normal mode)
 
 <img src="images/hjkl.png" alt="The four directions in Vim, keys h, j, k, and l."/>
 
@@ -39,7 +39,7 @@ I’ve compiled a list of *essential* Vim commands that I use every day. I then 
         * `T [char]` - Move to before the next char on the current line before the cursor
         * All these commands can be followed by `;` (semicolon) to go to the next searched item, and `,` (comma) to go the the previous searched item
 
-##Insert/Appending/Editing Text
+## Insert/Appending/Editing Text
 * Results in insert mode
     * `i` - start insert mode at cursor
     * `I` - insert at the beginning of the line
@@ -59,7 +59,7 @@ I’ve compiled a list of *essential* Vim commands that I use every day. I then 
 * Advanced
     * `J` - join line below to the current one
 
-##Marking text (visual mode)
+## Marking text (visual mode)
 * `v` - starts visual mode
     * From here you can move around as in normal mode (hjkl, etc.) and can then do a command (such as `y`, `d`, or `c`)
 * `V` - starts linewise visual mode
@@ -69,14 +69,14 @@ I’ve compiled a list of *essential* Vim commands that I use every day. I then 
     * `O` - move to Other corner of block
     * `o` - move to other end of marked area
 
-##Visual commands
+## Visual commands
 Type any of these while some text is selected to apply the action
 
 * `y` - yank (copy) marked text
 * `d` - delete marked text
 * `c` - delete the marked text and go into insert mode (like c does above)
 
-##Cut and Paste
+## Cut and Paste
 * `yy` - yank (copy) a line
 * `p` - put (paste) the clipboard after cursor
 * `P` - put (paste) before cursor
@@ -84,13 +84,13 @@ Type any of these while some text is selected to apply the action
 * `x` - delete (cut) current character
 * `X` - delete previous character (like backspace)
 
-##Exiting
+## Exiting
 * `:w` - write (save) the file, but don't exit
 * `:wq` - write (save) and quit
 * `:q` - quit (fails if anything has changed)
 * `:q!` - quit and throw away changes
 
-##Search/Replace
+## Search/Replace
 * `/pattern` - search for pattern
 * `?pattern` - search backward for pattern
 * `n` - repeat search in same direction
@@ -98,7 +98,7 @@ Type any of these while some text is selected to apply the action
 * `:%s/old/new/g` - replace all old with new throughout file ([gn](https://github.com/vinitkumar/white-paper) is better though)
 * `:%s/old/new/gc` - replace all old with new throughout file with confirmations
 
-##Working with multiple files
+## Working with multiple files
 * `:e filename` - Edit a file
 * `:tabe` - Make a new tab
 * `gt` - Go to the next tab
@@ -110,7 +110,7 @@ Type any of these while some text is selected to apply the action
     * `ctrl+ww` - switch between windows
     * `ctrl+wq` - Quit a window
 
-##Marks
+## Marks
 Marks allow you to jump to designated points in your code.
 
 * `m{a-z}` - Set mark {a-z} at cursor position 
@@ -118,15 +118,15 @@ Marks allow you to jump to designated points in your code.
 * `‘{a-z}` - move the cursor to the start of the line where the mark was set
 * `‘’` - go back to the previous jump location
 
-##General
+## General
 * `u` - undo
 * `Ctrl+r` - redo
 * `.` - repeat last command
 
-#Making Vim actually useful
+# Making Vim actually useful
 Vim is quite unpleasant out of the box. For example, typeing `:w` for every file save is awkward and copying and pasting to the system clipboard does not work. But a few changes will get you much closer to the editor of your dreams.
 
-##.vimrc
+## .vimrc
 * [My .vimrc file](https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc) has some pretty great ideas I haven't seen elsewhere.
 * This is a minimal vimrc that focuses on three priorities:
     * adding options that are strictly better (like more information showing in autocomplete)
@@ -147,7 +147,7 @@ Vim is quite unpleasant out of the box. For example, typeing `:w` for every file
         * then move the old Vim binary: `$ mv /usr/bin/vim /usr/bin/vimold`
         * restart your terminal and you should see `vim --version` now with `+clipboard`
 
-##Plugins
+## Plugins
 * The easiest way to make Vim more powerful is to use Vintageous in Sublime Text (version 3). This gives you Vim mode inside sublime. I suggest this (or a similar setup with the Atom editor) if you aren't a Vim master. Check out [Advanced Vim](advanced.html) if you are.
 * Vintageous is great, but I suggest you change a few settings to make it better.
     * Clone [this repository](https://github.com/theicfire/Vintageous) to `~/.config/sublime-text-3/Packages/Vintageous`, or similar. Then check out the "custom" branch.
@@ -163,10 +163,10 @@ Vim is quite unpleasant out of the box. For example, typeing `:w` for every file
  
 * Now you should be able to restart sublime and have a great vim environment! Sweet Dude.
 
-##Switch Caps Lock and Escape
+## Switch Caps Lock and Escape
 * I highly recommend you switch the mapping of your caps lock and escape keys. You'll love it, promise! Switching the two keys is platform dependent; Google should get you the answer
 
-##Other
+## Other
 I don’t personally use these yet, but I’ve heard other people do!
 
 * `:wqa` - Write and quit all open tabs (thanks Brian Zick)
