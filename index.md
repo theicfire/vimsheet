@@ -75,6 +75,8 @@ Type any of these while some text is selected to apply the action
 * `y` - yank (copy) marked text
 * `d` - delete marked text
 * `c` - delete the marked text and go into insert mode (like c does above)
+* `>` - Indent one level
+* `<` - Unindent one level
 
 ##Cut and Paste
 * `yy` - yank (copy) a line
