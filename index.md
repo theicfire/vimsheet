@@ -89,6 +89,8 @@ Type any of these while some text is selected to apply the action
 ##Exiting
 * `:w` - write (save) the file, but don't exit
 * `:wq` - write (save) and quit
+* `:x` - save if the file has been modified and quit
+* `ZZ` - Same as above
 * `:q` - quit (fails if anything has changed)
 * `:q!` - quit and throw away changes
 
