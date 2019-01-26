@@ -6,7 +6,7 @@ title: Advanced Cheat Sheet
 # Advanced Vim Cheat Sheet
 The best possible resource on vim is the book [Practical Vim](http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980). I’ve outlined some of my personal favorites, and will also put in some plugins that might just change your world.
 
-##General
+## General
 
 * Text Objects
 	* Say you have `def (arg1, arg2, arg3)`, where your cursor is somewhere in the middle of the parenthesis.
@@ -41,7 +41,7 @@ The most helpful part of plugins is that they make vim a better fully featured I
 * vim-surround: Quicker way to add or delete some characters *around* something
 * tagbar: Similar to the "outline" feature of many IDE's
 
-##Regex and Searching
+## Regex and Searching
 * Searching in vim is very unintuitive. There are 4 modes of searching, ranging from "very magic" to "very no magic". They determine what needs to be escaped with a `\` in your search term. If you just want "regex on" or "regex off" then always search in Very Magic or Very No Magic mode.
 * Check out the details by running `:h \\v`.
 
@@ -54,10 +54,10 @@ Start a search with `\v`. Everything else can act like a normal regex search, ex
 #### Differences from Pearl Regex
 The `<` and `>` characters are special for start and end of word. Escape them to search for them literally.
 
-###Literal Search (Very No Magic Mode)
+### Literal Search (Very No Magic Mode)
 Start a search with `\V`. Now you *only have to escape* `/` and `\`. It would be nice if you didn't have to escape *anything*, but alas vim is not like this.
 
-###Advanced: Match a subsection of your search
+### Advanced: Match a subsection of your search
 Let's say you have this file
 
 ```
