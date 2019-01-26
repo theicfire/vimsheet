@@ -1,5 +1,5 @@
 name: White Paper
-markdown: redcarpet
+markdown: kramdown
 url: http://vimsheet.com
 description: A Great Vim Cheat Sheet
 
