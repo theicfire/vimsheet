@@ -95,7 +95,7 @@ Type any of these while some text is selected to apply the action
 * `?pattern` - search backward for pattern
 * `n` - repeat search in same direction
 * `N` - repeat search in opposite direction
-* `:%s/old/new/g` - replace all old with new throughout file ([gn](https://github.com/vinitkumar/white-paper) is better though)
+* `:%s/old/new/g` - replace all old with new throughout file ([gn](http://vimcasts.org/episodes/operating-on-search-matches-using-gn/) is better though)
 * `:%s/old/new/gc` - replace all old with new throughout file with confirmations
 
 ## Working with multiple files
