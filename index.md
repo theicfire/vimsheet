@@ -52,6 +52,7 @@ I’ve compiled a list of *essential* Vim commands that I use every day. I have 
     * ex. `ce` changes from the cursor to the end of the cursor word
 * `Esc` or `Ctrl+[` - exit insert mode
 * `r  [char]` - replace a single character with the specified char (does not use Insert mode)
+* `R  [chars]` - replace multiple characters with the specified chars till escape is hit (switch to Replace mode)
 * `d` - delete
     * `d` - [movement command] deletes from the cursor to the move-to point.
     * ex. `de` deletes from the cursor to the end of the current word
