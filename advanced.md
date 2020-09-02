@@ -45,13 +45,13 @@ The most helpful part of plugins is that they make vim a better fully featured I
 * Searching in vim is very unintuitive. There are 4 modes of searching, ranging from "very magic" to "very no magic". They determine what needs to be escaped with a `\` in your search term. If you just want "regex on" or "regex off" then always search in Very Magic or Very No Magic mode.
 * Check out the details by running `:h \\v`.
 
-### Pearl style regexes (Very Magic Mode)
+### Perl style regexes (Very Magic Mode)
 
 Start a search with `\v`. Everything else can act like a normal regex search, except you have to escape `/` and `\`. If you are searching backwards, you’ll also have to escape `?`.
 
 * E.g. search for a url starting with `www` and ending with `.com`: `\vwww\..*\.com`
 
-#### Differences from Pearl Regex
+#### Differences from Perl Regex
 The `<` and `>` characters are special for start and end of word. Escape them to search for them literally.
 
 ### Literal Search (Very No Magic Mode)
