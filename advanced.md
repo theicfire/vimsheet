@@ -23,6 +23,7 @@ The best possible resource on vim is the book [Practical Vim](http://www.amazon.
     * `g,` - go forwards in the change list
 * `Ctrl+r + 0` in insert mode inserts the last yanked text (or in command mode)
 * `gv` - reselect (select last selected block of text, from visual mode)
+* `ctrl+e / ctrl+y` - Scroll down/up one line
 
 ## Plugins
 The most helpful part of plugins is that they make vim a better fully featured IDE. Concepts like global search and finding a file to open are solved with plugins. They also can bring out some missing features of vim, like automatic commenting.
