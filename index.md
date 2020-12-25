@@ -98,7 +98,7 @@ Type any of these while some text is selected to apply the action
 * `:%s/old/new/g` - replace all old with new throughout file ([gn](http://vimcasts.org/episodes/operating-on-search-matches-using-gn/) is better though)
 * `:%s/old/new/gc` - replace all old with new throughout file with confirmations
 
-##Working with multiple files - Tabs
+## Working with multiple files - Tabs
 * `:e filename` - Edit a file
 * `:tabe` - Make a new tab
 * `gt` - Go to the next tab
@@ -110,7 +110,7 @@ Type any of these while some text is selected to apply the action
     * `ctrl+ww` - switch between windows
     * `ctrl+wq` - Quit a window
 
-##Working with multiple files - Buffers
+## Working with multiple files - Buffers
 * `:enew` - edit a new, unnamed buffer
 * `:ls` - list all open buffers
 * `:bn` - go to the next buffer
@@ -122,10 +122,10 @@ Type any of these while some text is selected to apply the action
 * `Ctrl+o` - Go to the previous buffer you were in
 * `Ctrl+i` - Reverse the effect of `Ctrl+o`
 
-##Marks
+## Marks
 Marks allow you to jump to designated points in your code.
 
-* `m{a-z}` - Set mark {a-z} at cursor position 
+* `m{a-z}` - Set mark {a-z} at cursor position
 * A capital mark {A-Z} sets a global mark and will work between files
 * `‘{a-z}` - move the cursor to the start of the line where the mark was set
 * `‘’` - go back to the previous jump location
@@ -172,7 +172,7 @@ Vim is quite unpleasant out of the box. For example, typing `:w` for every file 
         * `{ "keys": ["alt+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },`
     * [Add the ability to toggle Vintageous on and off](https://github.com/guillermooo/Vintageous/wiki/Toggling-Vintageous)
     * Mac users: you will not have the ability to hold down a navigation key (like holding j to go down). To fix this, run the commands specified here: [https://gist.github.com/kconragan/2510186](https://gist.github.com/kconragan/2510186)
- 
+
 * Now you should be able to restart sublime and have a great Vim environment! Sweet Dude.
 
 ## Switch Caps Lock and Escape
