@@ -169,5 +169,6 @@ Vim is quite unpleasant out of the box. For example, typing `:w` for every file 
 ## Other
 I don’t personally use these yet, but I’ve heard other people do!
 
+* `:qa` - Quit all open tabs (thanks Vince Banzon)
+* `:wa` - Write all open tabs (thanks Vince Banzon)
 * `:wqa` - Write and quit all open tabs (thanks Brian Zick)
-
