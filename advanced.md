@@ -4,7 +4,6 @@ title: Advanced Cheat Sheet
 ---
 
 # Advanced Vim Cheat Sheet
-The best possible resource on vim is the book [Practical Vim](http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980). I’ve outlined some of my personal favorites, and will also put in some plugins that might just change your world.
 
 ## General
 
@@ -37,7 +36,7 @@ The most helpful part of plugins is that they make vim a better fully featured I
 
 ### Awesome Plugins
 * indentLine: Shows you visibly your tabs or spaces, like sublime
-* neocomplete.vim (or you complete me): Autocomplete
+* neocomplete.vim (or YouCompleteMe): Autocomplete
 * nerdtree: File browser
 * vim-surround: Quicker way to add or delete some characters *around* something
 * tagbar: Similar to the "outline" feature of many IDE's
@@ -87,5 +86,3 @@ So in this case: `\v` `www\.` **\zs** `.*` **\ze** `\.com`
 
 ### Faster Search and Replace
 * Vim 7.4 has an [amazing "gn" command](http://vimcasts.org/episodes/operating-on-search-matches-using-gn/) that allows you to search and replace faster. `gn` means "select the next search term".
-
-
