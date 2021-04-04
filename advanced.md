@@ -7,22 +7,14 @@ title: Advanced Cheat Sheet
 
 ## General
 
-* Text Objects
-	* Say you have `def (arg1, arg2, arg3)`, where your cursor is somewhere in the middle of the parenthesis.
-    * `di(` deletes everything between the parenthesis. That says "change everything inside the nearest parenthesis". Without text objects, you would need to do `T(dt)`.
-	* Learn more [here](http://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/)
 * automatic marks
     * [http://vim.wikia.com/wiki/Using\_marks](http://vim.wikia.com/wiki/Using_marks) under "special marks"
-* `%` - jumps between matching `()` or `{}`
 * [jump list](http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations)
 	* `ctrl+o` - go backwards in the jump list
 	* `ctrl+i` - go forwards in the jump list
 * [change list](http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations)
 	* `g;` - go backwards in the change list
     * `g,` - go forwards in the change list
-* `Ctrl+r + 0` in insert mode inserts the last yanked text (or in command mode)
-* `gv` - reselect (select last selected block of text, from visual mode)
-* `ctrl+e / ctrl+y` - Scroll down/up one line
 
 ## Plugins
 The most helpful part of plugins is that they make vim a better fully featured IDE. Concepts like global search and finding a file to open are solved with plugins. They also can bring out some missing features of vim, like automatic commenting.
