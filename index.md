@@ -124,7 +124,7 @@ Vim is quite unpleasant out of the box. It's an arcane experience:
 
 It does have a significant strength though: your fingers can stay on the main keyboard keys to do most editing actions. This is faster and more ergonomic. I find that the toughest part about VIM is guiding people towards getting the benefits of VIM without the drawbacks. Here are two ideas on how to go about this.
 
-## Switch Caps Lock and Escape
+## Switch caps lock and escape
 * I highly recommend you switch the mapping of your caps lock and escape keys. You'll love it, promise! Switching the two keys is platform dependent.
 
 ## Visual Studio Code
@@ -165,6 +165,6 @@ I don’t personally use these yet, but I’ve heard other people do!
 
 * `:wqa` - Write and quit all open tabs (thanks Brian Zick)
 
-## Additional Resources
+## Additional resources
 * [Advanced Vim](advanced.html)
 * [Practical Vim](http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980) is a fantastic resource on many of the useful hidden features of vim.
