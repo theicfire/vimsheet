@@ -87,7 +87,7 @@ I’ve compiled a list of essential Vim commands that I use every day. I have th
 * `:%s/old/new/g` - Replace all old with new throughout file ([gn](http://vimcasts.org/episodes/operating-on-search-matches-using-gn/) is better though)
 * `:%s/old/new/gc` - Replace all old with new throughout file with confirmations
 
-## Working with multiple files
+## Working with multiple files - Tabs
 * `:e filename` - Edit a file
 * `:tabe` - Make a new tab
 * `gt` - Go to the next tab
@@ -100,10 +100,22 @@ I’ve compiled a list of essential Vim commands that I use every day. I have th
 * `ctrl+ww` - Switch between windows
 * `ctrl+wq` - Quit a window
 
+## Working with multiple files - Buffers
+* `:enew` - edit a new, unnamed buffer
+* `:ls` - list all open buffers
+* `:bn` - go to the next buffer
+* `:bp` - go to the previous buffer
+* `:b[N]` - goto buffer numbered N
+    * ex. `:b2` will bring buffer numbered 2 to your tab
+* `:b filename-prefix` - goto buffer with the corresponding filename-prefix
+* `Ctrl+^` - Toggle between current and last buffer
+* `Ctrl+o` - Go to the previous buffer you were in
+* `Ctrl+i` - Reverse the effect of `Ctrl+o`
+
 ## Marks
 Marks allow you to jump to designated points in your code.
 
-* `m{a-z}` - Set mark {a-z} at cursor position 
+* `m{a-z}` - Set mark {a-z} at cursor position
 * A capital mark {A-Z} sets a global mark and will work between files
 * `'{a-z}` - Move the cursor to the start of the line where the mark was set
 * `''` - Go back to the previous jump location
@@ -156,7 +168,7 @@ For all the given limitations, you'll need to find a solution. You can either so
         * `{ "keys": ["alt+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },`
     * [Add the ability to toggle Vintageous on and off](https://github.com/guillermooo/Vintageous/wiki/Toggling-Vintageous)
     * Mac users: you will not have the ability to hold down a navigation key (like holding j to go down). To fix this, run the commands specified here: [https://gist.github.com/kconragan/2510186](https://gist.github.com/kconragan/2510186)
- 
+
 * Now you should be able to restart sublime and have a great Vim environment! Sweet Dude.
 
 
