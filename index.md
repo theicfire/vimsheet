@@ -93,6 +93,7 @@ I’ve compiled a list of essential Vim commands that I use every day. I have th
 ### Editing text
 * `J` - Join line below to the current one
 * `r  [char]` - Replace a single character with the specified char (does not use Insert mode)
+* `Ctrl+n` - Autocomplete comprising of keywords already typed in the file
 
 ### Visual mode
 * `O` - Move to other corner of block
