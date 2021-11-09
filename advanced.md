@@ -4,26 +4,17 @@ title: Advanced Cheat Sheet
 ---
 
 # Advanced Vim Cheat Sheet
-The best possible resource on vim is the book [Practical Vim](http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980). I’ve outlined some of my personal favorites, and will also put in some plugins that might just change your world.
 
 ## General
 
-* Text Objects
-	* Say you have `def (arg1, arg2, arg3)`, where your cursor is somewhere in the middle of the parenthesis.
-    * `di(` deletes everything between the parenthesis. That says "change everything inside the nearest parenthesis". Without text objects, you would need to do `T(dt)`.
-	* Learn more [here](http://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/)
 * automatic marks
     * [http://vim.wikia.com/wiki/Using\_marks](http://vim.wikia.com/wiki/Using_marks) under "special marks"
-* `%` - jumps between matching `()` or `{}`
 * [jump list](http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations)
 	* `ctrl+o` - go backwards in the jump list
 	* `ctrl+i` - go forwards in the jump list
 * [change list](http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations)
 	* `g;` - go backwards in the change list
     * `g,` - go forwards in the change list
-* `Ctrl+r + 0` in insert mode inserts the last yanked text (or in command mode)
-* `gv` - reselect (select last selected block of text, from visual mode)
-* `ctrl+e / ctrl+y` - Scroll down/up one line
 
 ## Plugins
 The most helpful part of plugins is that they make vim a better fully featured IDE. Concepts like global search and finding a file to open are solved with plugins. They also can bring out some missing features of vim, like automatic commenting.
@@ -37,7 +28,7 @@ The most helpful part of plugins is that they make vim a better fully featured I
 
 ### Awesome Plugins
 * indentLine: Shows you visibly your tabs or spaces, like sublime
-* neocomplete.vim (or you complete me): Autocomplete
+* neocomplete.vim (or YouCompleteMe): Autocomplete
 * nerdtree: File browser
 * vim-surround: Quicker way to add or delete some characters *around* something
 * tagbar: Similar to the "outline" feature of many IDE's
@@ -87,5 +78,3 @@ So in this case: `\v` `www\.` **\zs** `.*` **\ze** `\.com`
 
 ### Faster Search and Replace
 * Vim 7.4 has an [amazing "gn" command](http://vimcasts.org/episodes/operating-on-search-matches-using-gn/) that allows you to search and replace faster. `gn` means "select the next search term".
-
-
