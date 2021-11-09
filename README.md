@@ -6,3 +6,8 @@ This is a two page website that has `index.html` and `advanced.html`. The two ar
 Pull requests are welcome! To edit locally, install jekyll and run `jekyll serve`
 
 Design from [white-paper](https://github.com/vinitkumar/white-paper).
+
+# Running locally
+- Install rubygems
+- `bundle install`
+- `bundle exec jekyll serve`
