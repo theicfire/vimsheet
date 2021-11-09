@@ -429,12 +429,14 @@ pre {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 code{
-  padding: 0 4px;
+  padding: 0px 8px;
   font-family: "Source Code Pro", "Courier New", Courier, sans-serif;
-  font-size: 0.9em;
+  font-size: 1.0em;
   color: #556270;
-  background: #F4FAFF;
+  background: #EBF6FF;
   border-radius: 3px;
+  display: inline-block;
+  margin: 2px 2px;
 }
 pre code {
   padding: 0;
