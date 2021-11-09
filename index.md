@@ -180,6 +180,8 @@ I don’t personally use these yet, but I’ve heard other people do!
 * `:qa` - Quit all open tabs (thanks Vince Banzon)
 * `:wa` - Write all open tabs (thanks Vince Banzon)
 * `:wqa` - Write and quit all open tabs (thanks Brian Zick)
+* `:!command` - Execute `command` in the shell
+* `:next` - Go to the next file when opened multiple files(when you open them using `vim file0 file1 file2 ...`)
 
 ## Additional resources
 * [Advanced Vim](advanced.html)
