@@ -151,6 +151,7 @@ Vim is quite unpleasant out of the box. It's an arcane experience:
 - Mouse doesn't work
 - Management of multiple files is tricky
 - Integration with other plugins (like compiler warnings) is challenging
+- Repeatedly indenting/unindenting multiple lines is challenging, though possible
 
 It does have a significant strength though: your fingers can stay on the main keyboard keys to do most editing actions. This is faster and more ergonomic. I find that the toughest part about VIM is guiding people towards getting the benefits of VIM without the drawbacks. Here are some ideas on how to go about this.
 
