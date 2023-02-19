@@ -201,9 +201,9 @@ For all the given limitations, you'll need to find a solution. You can either so
 
 I don’t personally use these yet, but I’ve heard other people do!
 
-- `:qa` - Quit all open tabs (thanks Vince Banzon)
-- `:wa` - Write all open tabs (thanks Vince Banzon)
-- `:wqa` - Write and quit all open tabs (thanks Brian Zick)
+- `:qa` - Quit all open buffers
+- `:wa` - Write all open buffers
+- `:wqa` - Write and quit all open buffers
 
 ## Additional resources
 
