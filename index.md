@@ -17,17 +17,18 @@ I’ve compiled a list of essential Vim commands that I use every day. I have th
 - `e` / `ge` - Next/previous end of word
 - `0` / `$` - Start/End of line
 - `^` - First non-blank character of line (same as `0w`)
+- `g_` - Last non-blank character of line
 
 ### Editing text
 
 - `i` / `a` - Start insert mode at/after cursor
 - `I` / `A` - Start insert mode at the beginning/end of the line
 - `o` / `O` - Add blank line below/above current line
-- `Esc` or `Ctrl+[` - Exit insert mode
+- `Esc` or `Ctrl+[` or `Ctrl+c` - Exit insert mode
 - `d` - Delete
 - `dd` - Delete line
-- `c` - Delete, then start insert mode
-- `cc` - Delete line, then start insert mode
+- `s` - Delete, then start insert mode
+- `cc` / `S` - Delete line, then start insert mode
 
 ### Operators
 
@@ -44,7 +45,7 @@ I’ve compiled a list of essential Vim commands that I use every day. I have th
 - `v` - Start visual mode
 - `V` - Start linewise visual mode
 - `Ctrl+v` - Start visual block mode
-- `Esc` or `Ctrl+[` - Exit visual mode
+- `Esc` or `Ctrl+[` or `Ctrl+c` - Exit visual mode
 
 ### Clipboard
 
