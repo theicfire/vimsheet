@@ -10,7 +10,10 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 
 body {
   background-color: #FFF;
@@ -19,15 +22,34 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+h1 {
+  margin-bottom: 1em;
+}
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #00a;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:visited {
+  color: #a0a;
+}
 
 /*****************************************************************************/
 /*
@@ -134,7 +156,8 @@ a:visited { color: #a0a; }
   padding: 0 .4em;
 }
 
-.post ul, .post ol {
+.post ul,
+.post ol {
   margin-left: 1.35em;
 }
 

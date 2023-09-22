@@ -4,6 +4,14 @@ title: A Great Vim Cheat Sheet
 ---
 
 # A Great Vim Cheat Sheet
+<div class='social-buttons'>
+  <a href='https://github.com/theicfire/vimsheet'><img src='/images/github.png' /></a>
+  <a href='https://twitter.com/chaselambda'><img src='/images/twitter.png' /></a>
+  <span class='github-stars'><a class="github-button"
+  href="https://github.com/theicfire/vimsheet" data-icon="octicon-star"
+  data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a></span>
+</div>
+
 
 I’ve compiled a list of essential Vim commands that I use every day. I have then given a few instructions on how to make Vim as great as it should be, because it’s painful without configuration.
 
