@@ -21,7 +21,7 @@ I’ve compiled a list of essential Vim commands that I use every day. I have th
 
 - `h` `j` `k` `l` - Arrow keys
 - `w` / `b` - Next/previous word
-- `W` / `B` - Next/previous word (space seperated)
+- `W` / `B` - Next/previous word (space separated)
 - `e` / `ge` - Next/previous end of word
 - `0` / `$` - Start/End of line
 - `^` - First non-blank character of line (same as `0w`)
